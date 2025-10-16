@@ -2,6 +2,7 @@ package br.fiap.projetoAssistenciaTecnica.domain;
 
 import jakarta.persistence.*;
 
+@Entity
 @Table(name="JAVA_CLIENTE")
 public class Cliente {
     @Id
