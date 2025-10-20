@@ -1,6 +1,11 @@
 package br.fiap.projetoAssistenciaTecnica.domain;
 
 import jakarta.persistence.*;
+import lombok.Data;
+
+//@Data -> anotação que gera getter, setter, toString e hashCode
+//@Value -> campos 'final', sem setters
+//@Builder -> possibilita -> cliente.builder(campo1=val1, campo2=val2).build()
 
 @Entity
 @Table(name="JAVA_CLIENTE")

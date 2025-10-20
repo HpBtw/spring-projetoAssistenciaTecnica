@@ -1,10 +1,18 @@
 package br.fiap.projetoAssistenciaTecnica.web.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.validation.constraints.Positive;
+
+@JsonInclude
 public class ClienteDTO {
     private Long id;
     private String nome;
     private String email;
     private String telefone;
+
+    @Positive
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY) // faz com que a senha nao retorne no DTO, só seja escrita (Segurança)
     private String senha;
 
     public Long getId() {
