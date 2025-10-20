@@ -5,9 +5,10 @@ import jakarta.persistence.*;
 @Entity
 @Table(name="JAVA_CLIENTE")
 public class Cliente {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="ID_PRODUTO")
+    @Column(name="ID_CLIENTE")
     private Long id;
 
     // não precisaria do name="NOME" pq a coluna tem o mesmo nome da variavel
