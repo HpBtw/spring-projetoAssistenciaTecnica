@@ -8,7 +8,7 @@ import lombok.Data;
 //@Builder -> possibilita -> cliente.builder(campo1=val1, campo2=val2).build()
 
 @Entity
-@Table(name="JAVA_CLIENTE")
+@Table(name = "JAVA_CLIENTE")
 public class Cliente {
 
     @Id
