@@ -3,6 +3,7 @@ package br.fiap.projetoAssistenciaTecnica.service;
 import br.fiap.projetoAssistenciaTecnica.domain.Cliente;
 import br.fiap.projetoAssistenciaTecnica.repository.ClienteRepository;
 import br.fiap.projetoAssistenciaTecnica.web.dto.ClienteDTO;
+import br.fiap.projetoAssistenciaTecnica.web.dto.EquipamentoDTO;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -33,4 +34,7 @@ public class ClienteService {
     public Cliente buscarId(Long id) {
         return repo.findById(id).orElse(null);
     }
+
+    //public List<EquipamentoDTO> listarEquipamentoPorCliente(Long idCliente) {
+    //}
 }

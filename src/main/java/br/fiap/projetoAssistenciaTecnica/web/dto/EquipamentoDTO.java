@@ -7,6 +7,7 @@ import java.time.LocalDate;
 
 // @getter gera somente gets
 @Data // getters, setters, toString, equals, hashCode
+// PARA USAR ISSO, É NECESSARIO INSTALAR O PLUGIN LOMBOK
 public class EquipamentoDTO {
     private Long id;
     private Long idCliente;
@@ -15,4 +16,5 @@ public class EquipamentoDTO {
     private String modelo;
     private Long numSerie;
     private LocalDate dataRegistro;
+
 }
