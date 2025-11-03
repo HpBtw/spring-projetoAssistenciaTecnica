@@ -7,8 +7,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface EquipamentoRepository extends JpaRepository<Equipamento, Long> {
-//    public List<ClienteDTO> findByClienteId(Long idCliente) {
-//
-//        return
-//    }
+    public List<Equipamento> findByClienteId(Long idCliente);
 }

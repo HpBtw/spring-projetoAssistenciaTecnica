@@ -33,6 +33,8 @@ public class EquipamentoService {
         eq.setDataRegistro(eqDTO.getDataRegistro());
         eq.setCliente(cliente);
 
+        System.out.println("tentando salvar");
+
         return repoEquip.save(eq);
     }
 
