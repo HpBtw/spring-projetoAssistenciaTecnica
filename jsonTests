@@ -1,0 +1,8 @@
+{
+    "idCliente":1,
+    "tipo":"tipoExemplo",
+    "marca":"marcaExemplo",
+    "modelo":"modeloExemplo",
+    "numSerie":123,
+    "dataRegistro":"2025-10-27"
+}
