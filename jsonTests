@@ -8,3 +8,12 @@
 }
 
 aaaaaaaaaaa
+
+POST http://localhost:8080/cliente/autenticar
+{
+   "email":"teste3@crypt",
+   "senha":"Teste2Crypt123"
+}
+
+GET http://localhost:8080/cliente/1/equipamento
+-- PEGAR EQUIPS POR CLIENTE
